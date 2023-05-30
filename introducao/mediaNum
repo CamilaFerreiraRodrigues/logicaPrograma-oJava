@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class programa2 {
+
+    public static void main(String[] args) {
+      
+         double nota1, nota2, nota3, soma, media;
+        Scanner entrada = new Scanner(System.in);
+        
+        System.out.println("vamos calcular a media entre tres notas");
+        
+        System.out.println("digite o valor da nota 1");
+        nota1= entrada.nextDouble();
+        System.out.println("digite uma valor para nota 2");
+        nota2= entrada.nextDouble();
+        System.out.println("digite um valor para nota 3");
+        nota3= entrada.nextDouble();
+        
+        soma= nota1 + nota2 + nota3;
+        
+        media=  soma/3;
+       
+        System.out.printf(" \n O seu resultado e: %.2f", media );
+        
+       
+        
+    
+    }
+    
+}
