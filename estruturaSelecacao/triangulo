@@ -1,0 +1,28 @@
+/*Escreva um programa que leia os comprimentos dos lados de um triângulo. Após isso, verifique se
+é um triângulo válido. Observação: para um triângulo ser válido, nenhum dos lados pode ser mair que
+a soma dos outros dois lados.*/
+
+
+import java.util.Scanner;
+
+public class triagulo {
+
+	public static void main(String[] args) {
+		
+	    int ladoA, ladoB, ladoC;
+	    Scanner in = new Scanner(System.in);
+	    
+	    
+	    ladoA= in.nextInt();
+	    ladoB= in.nextInt();
+	    ladoC= in.nextInt();
+	    
+	    
+	    if ((ladoA+ladoB)< ladoC || (ladoA+ladoC)< ladoB || (ladoC+ladoB)< ladoA){
+	    	System.out.println("INVALIDO");
+	    }
+	    else {
+	    	System.out.println("VALIDO");
+	    }
+}
+}
