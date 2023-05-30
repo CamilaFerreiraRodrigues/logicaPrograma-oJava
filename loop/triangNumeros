@@ -1,0 +1,51 @@
+/*Faça um programa que leia um inteiro n e imprima um "triângulo" com os números. Por exemplo, para n=8, a saída seria:
+
+1
+22
+333
+4444
+55555
+666666
+7777777
+88888888
+*/
+
+import java.util.Scanner;
+
+
+public class triangulo  {
+
+    public static void main(String[] args) {
+       
+    int contPiramide;
+    Scanner input = new Scanner(System.in);
+
+
+    int numEscolhido; 
+
+    numEscolhido = input.nextInt();
+    
+    int i = 0;
+
+
+    while(i <= numEscolhido){
+
+
+    int j = 0;
+
+    while (j < i){
+
+    System.out.print(i);
+    j = j +1;
+}
+
+     if(j != 0)
+    {
+    System.out.println("");
+    }
+    i = i+1;
+
+}
+    
+}
+}
