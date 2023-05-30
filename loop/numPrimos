@@ -1,0 +1,46 @@
+/*Faça um programa que leia um valor inteiro N e então mostre os N primeiros números primos (o primeiro número primo é o 2).*/
+
+import java.util.Scanner;
+public class primos {
+  
+    public static void main(String[] args) {
+        
+        
+        int numDigitado;
+
+        int i = 1;
+        int j = 0;
+        int divisorEncontrado = 0;
+
+
+        Scanner input = new Scanner(System.in);
+
+        numDigitado=input.nextInt();
+        int numsAchados = 0;
+
+        while (numsAchados != numDigitado){
+
+        j = 1;
+        divisorEncontrado = 0;
+
+        while(j <= i){
+            
+        if(i%j == 0){
+        divisorEncontrado = divisorEncontrado +1;
+}
+        j++;
+}
+
+        if(divisorEncontrado ==2){
+        System.out.println(i);
+        numsAchados = numsAchados + 1;
+}
+
+        i++;
+        
+
+}
+      
+    }
+    
+}
