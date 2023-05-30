@@ -1,0 +1,38 @@
+/*Foi encontrado um dispositivo que possui um sistema que mostra as seguintes  mensagens, dependendo da
+temperatura medida: Muito Baixa, Baixa, Normal, Alta e Muito Alta.*/
+
+
+
+import java.util.Scanner;
+
+public class temp {
+
+	public static void main(String[] args) {
+		
+	    int  temp;
+	    Scanner input= new Scanner(System.in);
+	    
+	    temp= input.nextInt();
+	    
+	    if (temp <= -20) {
+	    	
+	    	System.out.println("Muito Baixa");
+	    }
+	    else if (temp<= 30 && temp > -20) {
+	    	
+	    	System.out.println("Baixa");
+	   }
+	   else if (temp <= 200 && temp > 30 ) {
+		   
+		   System.out.println("Normal");
+	   }
+	   else if (temp <= 250  && temp > 200) {
+		   
+		   System.out.println("Alta");
+	   }
+	   else {
+		   System.out.println("Muito Alta");
+	   }
+
+}
+}
