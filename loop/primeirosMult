@@ -1,0 +1,40 @@
+/*Escreva um programa para ler um número inteiro positivo n e escrever os
+n primeiros múltiplos de 3 (e que são maiores que zero).*/
+
+import java.util.Scanner;
+
+
+public class numero{
+
+    
+    public static void main(String[] args) {
+       
+        int num, i, j;
+        Scanner input = new Scanner(System.in);
+        boolean loop = true;
+        
+        num= input.nextInt();
+       
+        i= 1;
+        j=0;
+        while (loop){
+            
+            if (i%3==0 && j<= num){
+                
+               System.out.print(i+ " "); 
+               i++;
+               j++;
+              
+               if (j== num){
+                   loop = false;
+               }
+            }
+            else {
+                i++;
+            }
+    
+        }
+    
+    }
+    
+}
