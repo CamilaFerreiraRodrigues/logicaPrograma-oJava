@@ -1,0 +1,45 @@
+/*Escreva um programa que leia duas datas (dia, mês e ano) e então retorne qual das duas é a mais antiga.*/
+
+import java.util.Scanner;
+
+public class data {
+
+	public static void main(String[] args) {
+		
+	    int dia, dia2, mes, mes2, ano, ano2;
+	    int data1, data2;
+	    
+	    Scanner in = new Scanner(System.in); 
+	    dia= in.nextInt();
+	    mes= in.nextInt();
+	    ano= in.nextInt();	    
+      
+	    dia2= in.nextInt();
+	    mes2= in.nextInt();
+	    ano2= in.nextInt(); 
+	    
+	    data1= mes+ano;
+	    data2= mes2+ano2;
+	    
+	    if (data1>data2) {
+	    	System.out.println("DATA2");
+	    	
+	    }
+	    else if (data1==data2) {
+	    	
+	    	if (dia==dia2) {
+	    	System.out.println("IGUAIS");
+	    	
+	    	}
+	    	else if (dia>dia2) {
+	    	System.out.println("DATA2");
+	    	}
+	    	else {
+	    		System.out.println("DATA1");
+	    	}
+	    	}
+	    else {
+	    	System.out.println("DATA1");
+	    }    
+}
+}
